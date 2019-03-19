@@ -24,7 +24,7 @@ def fibonacci(n):
     else:
         return fibonacci(n-1)+fibonacci(n-2)
 
-fibonacci(20)
+fibonacci(0)
 
 
 def factorial( n ):
