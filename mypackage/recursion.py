@@ -26,8 +26,10 @@ def fibonacci(n):
 
 fibonacci(20)
 
-'''Return n!'''
+
 def factorial( n ):
+
+'''Return n!'''
     if n < 1:   # base case
         return 1
     else:
