@@ -53,7 +53,7 @@ print(items)
 
 
 
-def quicksort(items):
+def quickSort(items):
     if len(items) == 1 or len(items) == 0:
         return items
     else:
