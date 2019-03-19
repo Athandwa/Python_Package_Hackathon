@@ -53,22 +53,13 @@ print(items)
 
 
 
-def quickSort(items):
-    if len(items) == 1 or len(items) == 0:
-        return items
-    else:
-        pivot = items[0]
-        i = 0
-        for j in range(len(items)-1):
-            if items[j+1] < pivot:
-                items[j+1],items[i+1] = items[i+1], items[j+1]
-                i += 1
-        items[0],items[i] = items[i],items[0]
-        first_part = quickSort(items[:i])
-        second_part = quickSort(items[i+1:])
-        first_part.append(items[i])
-        return first_part + second_part
+def quicksort(arr):
 
-alist = [54,26,93,17,77,31,44,55,20]
-quickSort(alist)
-print(alist)
+    if not arr:
+        return []
+
+    pivots = [x for x in arr if x == arr[0]]
+    lesser = quicksort([x for x in arr if x < arr[0]])
+    greater = quicksort([x for x in arr if x > arr[0]])
+
+    return lesser + pivots + greater
