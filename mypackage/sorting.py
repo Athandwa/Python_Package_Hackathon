@@ -69,6 +69,6 @@ def quickSort(items):
         first_part.append(items[i])
         return first_part + second_part
 
-items = [54,26,93,17,77,31,44,55,20]
-quickSort(items)
-print(items)
+alist = [54,26,93,17,77,31,44,55,20]
+quickSort(alist)
+print(alist)
