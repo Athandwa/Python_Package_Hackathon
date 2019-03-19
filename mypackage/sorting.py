@@ -64,8 +64,8 @@ def quickSort(items):
                 items[j+1],items[i+1] = items[i+1], items[j+1]
                 i += 1
         items[0],items[i] = items[i],items[0]
-        first_part = quicksort(items[:i])
-        second_part = quicksort(items[i+1:])
+        first_part = quickSort(items[:i])
+        second_part = quickSort(items[i+1:])
         first_part.append(items[i])
         return first_part + second_part
 
