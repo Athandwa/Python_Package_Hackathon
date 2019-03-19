@@ -7,7 +7,7 @@ def bubble_sort(items):
                 temp = items[i]
                 items[i] = items[i+1]
                 items[i+1] = temp
-        return items
+    return items
 
 items = [54,26,93,17,77,31,44,55,20]
 bubble_sort(items)
