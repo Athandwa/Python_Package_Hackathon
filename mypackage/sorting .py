@@ -1,6 +1,6 @@
 def bubble_sort(items):
 
-    '''Return array of items, sorted in ascending order'''
+    # '''Return array of items, sorted in ascending order'''
     for passnum in range(len(items)-1,0,-1):
         for i in range(passnum):
             if items[i]>items[i+1]:

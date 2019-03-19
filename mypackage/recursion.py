@@ -16,7 +16,7 @@ sum_array([1,[2,3],[4,[5,[6,7]]]])
 
 def fibonacci(n):
 
-    '''Return nth term in fibonacci sequence'''
+    # '''Return nth term in fibonacci sequence'''
     if n == 0:
         return 0
     elif n == 1:
@@ -29,7 +29,7 @@ fibonacci(0)
 
 def factorial( n ):
 
-'''Return n!'''
+# '''Return n!'''
     if n < 1:   # base case
         return 1
     else:
@@ -37,7 +37,7 @@ def factorial( n ):
 
 factorial(6)
 
-'''Return word in reverse'''
+# '''Return word in reverse'''
 def reverse(word):
     if len(word) == 0:
         return word
